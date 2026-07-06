@@ -18,10 +18,10 @@ These views serve as the foundation for anomaly detection, root-cause analysis, 
 
 ### Revenue Drop
 
-Price Analysis
-Quantity Analysis
-Order Analysis
+* Price Analysis
+* Quantity Analysis
+* Order Analysis
     ↓
-Country Analysis
-Category Analysis
-Product Analysis
+* Country Analysis
+* Category Analysis
+* Product Analysis

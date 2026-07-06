@@ -108,3 +108,34 @@ GROUP BY
     c.customer_id,
     c.first_name,
     c.last_name;
+
+
+
+
+
+7. Daily orders view 
+CREATE VIEW vw_daily_orders AS
+SELECT
+    CAST(order_date AS DATE) AS order_date,
+    COUNT(DISTINCT order_number) AS total_orders
+FROM dbo.fact_sales
+GROUP BY CAST(order_date AS DATE);
+
+
+8. Daily QTY view 
+CREATE VIEW vw_daily_quantity AS
+SELECT
+    CAST(order_date AS DATE) AS order_date,
+    SUM(quantity) AS total_quantity
+FROM dbo.fact_sales
+GROUP BY CAST(order_date AS DATE);
+
+
+
+9. Daily avg price view 
+CREATE VIEW vw_daily_avg_price AS
+SELECT
+    CAST(order_date AS DATE) AS order_date,
+    AVG(price) AS avg_price
+FROM dbo.fact_sales
+GROUP BY CAST(order_date AS DATE);

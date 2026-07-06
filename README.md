@@ -17,7 +17,7 @@ These views serve as the foundation for anomaly detection, root-cause analysis, 
 ### RCA Design 
 
 ### Revenue Drop
-    ↓
+
 Price Analysis
 Quantity Analysis
 Order Analysis

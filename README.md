@@ -12,3 +12,16 @@ The KPI layer provides aggregated business metrics used by the Revenue Intellige
 * **vw_revenue_by_customer** – Customer-level revenue contribution.
 
 These views serve as the foundation for anomaly detection, root-cause analysis, forecasting, and AI-generated business insights.
+
+
+### RCA Design 
+
+### Revenue Drop
+    ↓
+Price Analysis
+Quantity Analysis
+Order Analysis
+    ↓
+Country Analysis
+Category Analysis
+Product Analysis
